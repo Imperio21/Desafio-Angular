@@ -1,0 +1,44 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<div class="container">
+    <div class="form-wrapper">
+        <div class="form-group">
+            <div class="input">
+                <label>CEP:</label>
+                <input (input)="onInputCep()" [(ngModel)]="cep" />
+            </div>
+
+            <div class="input">
+                <label>Rua:</label>
+                <input [(ngModel)]="street"/>
+            </div>
+
+            <div class="input">
+                <label>Número:</label>
+                <input  [(ngModel)]="number"/>
+            </div>
+
+            <div class="input">
+                <label>Bairro:</label>
+                <input  [(ngModel)]="neighborhood"/>
+            </div>
+
+            <div class="input">
+                <label>Complemento:</label>
+                <input [(ngModel)]="complement" />
+            </div>
+
+            <div class="input">
+                <label>Cidade:</label>
+                <input  [(ngModel)]="city"/>
+            </div>
+
+            <div class="input">
+                <label>Estado:</label>
+                <input [(ngModel)]="uf" />
+            </div>
+
+           
+        </div>
+    </div>
+</div>

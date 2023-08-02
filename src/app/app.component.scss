@@ -1,0 +1,90 @@
+body {
+    background-color:#DCDCDC;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    overflow-y: hidden;
+  }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+.form-wrapper {
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: 0 auto; 
+    border: 1px solid #A9A9A9;
+    padding: 24px 20px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 12px;
+
+    input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 70%;
+        font-family: roboto;
+    }
+
+    label {
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: medium;
+        text-align: left;
+        margin-right: 124px;
+        width: 100px; 
+        color: #4F4F4F
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+
+    .form-wrapper {
+       width: 80%;
+    }
+    
+    input {
+       font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    .container {
+      max-width: 90%;
+    }
+    
+    label {
+     font-size: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 1201px) {
+    .container {
+      max-width: 100%;
+    }
+
+    label {
+       font-size: 18px;
+    }
+  }
+  
